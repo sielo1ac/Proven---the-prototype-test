@@ -1,0 +1,308 @@
+<script language="JavaScript">
+<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Begin
+function solvegrams(form) {
+var a = eval(form.a.value);
+var b = eval(form.b.value);
+var c = eval(form.c.value);
+var d = eval(form.d.value);
+var e = eval(form.e.value);
+var f = eval(form.f.value);
+var g = eval(form.g.value);
+var h = eval(form.h.value);
+var i = eval(form.i.value);
+var result = 23.36 * ((a * (b / 100) * c) + (d * (e / 100) * f) + (g * (h / 100) * i)); 
+form.gramsa.value = result;
+}
+//  End -->
+</script>
+<form method="post" name="grams">
+<center>
+</center><table border="4">
+<tbody><tr>
+<td align="center">
+Grams of Alcohol Consumed
+</td>
+</tr></tbody></table><table border="4">
+<tbody><tr>
+<td align="center">
+1 #
+</td>
+<td align="center">
+<input name="a" size="6" type="text">
+</td>
+<td align="center">
+1 % 
+</td>
+<td align="center">
+<input name="b" size="6" type="text">
+</td>
+<td align="center">
+1 oz
+</td>
+<td align="center">
+<input name="c" size="6" type="text">
+</td>
+<td align="center">
+2 #
+</td>
+<td align="center">
+<input name="d" size="6" type="text">
+</td>
+<td align="center">
+2 %
+</td>
+<td align="center">
+<input name="e" size="6" type="text">
+</td>
+<td align="center">
+2 oz
+</td>
+<td align="center">
+<input name="f" size="6" type="text">
+</td>
+<td align="center">
+3 #
+</td>
+<td align="center">
+<input name="g" size="6" type="text">
+</td>
+<td align="center">
+3 %
+</td>
+<td align="center">
+<input name="h" size="6" type="text">
+</td>
+<td align="center">
+3 oz
+</td>
+<td align="center">
+<input name="i" size="6" type="text">
+</td>
+<td align="center">
+<input name="gramsbutton" value="Calculate Your Grams Of Alcohol" onclick="javascript:solvegrams(this.form)" type="button">
+</td>
+</tr>
+<tr>
+<td align="center">
+Total Grams of Alcohol Consumed 
+</td>
+<td colspan="3" align="center">
+<input name="gramsa" size="21" type="text">
+</td>
+</tr>
+<tr>
+<td align="center">
+</td></tr></tbody></table>
+</form>
+
+<script language="JavaScript">
+<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Begin
+function solvebodywaterwomen(form){
+var height = eval(form.height.value);
+var weight = eval(form.weight.value);
+var age = eval(form.age.value);
+var result = -2.097 + (age * 0) +(0.1069 * (height * 2.54)) + (0.2466 * (weight / 2.2045));
+form.bodywaterwomen.value = result;
+}
+//  End -->
+</script>
+<form method="post" name="grams">
+<center>
+</center><table border="4">
+<tbody><tr>
+<td align="center">
+Body Water Calculator for Women
+</td>
+</tr></tbody></table><table border="4">
+<tbody><tr>
+<td align="center">
+<table border="4">
+<tbody><tr>
+<td align="center">
+
+Age 
+</td>
+<td align="center">
+<input name="age" size="6" type="text">
+</td>
+<td align="center">
+Height in inches
+</td>
+<td align="center">
+<input name="height" size="6" type="text">
+</td>
+<td align="center">
+Weight in Pounds
+</td>
+<td align="center">
+<input name="weight" size="6" type="text">
+</td>
+
+</tr>
+<tr>
+<td colspan="4" align="center">
+<input name="bodywaterc" value="Calculate Your Body Water" onclick="javascript:solvebodywaterwomen(this.form)" type="button">
+</td>
+</tr>
+<tr>
+<td align="center">
+Body Water
+</td>
+<td colspan="3" align="center">
+<input name="bodywaterwomen" size="21" type="text">
+</td>
+</tr>
+<tr>
+<td align="center">
+</td></tr></tbody></table>
+
+<script type="text/javascript"> parent.resizeMe("scriptInclude637743852370064299"); parent.setInterval("resizeMe('scriptInclude637743852370064299');", 250); </script></td></tr></tbody></table></form></div>
+<script language="JavaScript">
+<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Begin
+function solvebodywater(form){
+var height = eval(form.height.value);
+var weight = eval(form.weight.value);
+var age = eval(form.age.value);
+var result = 2.44 - (0.09516 * age) + (0.1074 * (height * 2.54)) + (0.3362 * (weight / 2.2045));
+form.bodywater.value = result;
+}
+//  End -->
+</script>
+<form method="post" name="grams">
+<center>
+</center><table border="4">
+<tbody><tr>
+<td align="center">
+Body Water Calculator for Men
+</td>
+
+</tr></tbody></table><table border="4">
+<tbody><tr>
+<td align="center">
+<table border="4">
+<tbody><tr>
+<td align="center">
+Age 
+</td>
+<td align="center">
+<input name="age" size="6" type="text">
+</td>
+<td align="center">
+Height in inches
+</td>
+<td align="center">
+<input name="height" size="6" type="text">
+</td>
+
+<td align="center">
+Weight in Pounds
+</td>
+<td align="center">
+<input name="weight" size="6" type="text">
+</td>
+</tr>
+<tr>
+<td colspan="4" align="center">
+<input name="bodywaterc" value="Calculate Your Body Water" onclick="javascript:solvebodywater(this.form)" type="button">
+</td>
+</tr>
+<tr>
+<td align="center">
+Body Water
+</td>
+<td colspan="3" align="center">
+
+<input name="bodywater" size="21" type="text">
+</td>
+</tr>
+<tr>
+<td align="center">
+</td></tr></tbody></table>
+<script type="text/javascript"> parent.resizeMe("scriptInclude637743852370064299"); parent.setInterval("resizeMe('scriptInclude637743852370064299');", 250); </script></td></tr></tbody></table></form>
+<script language="JavaScript">
+<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Begin
+function solveBAC(form) {
+var grams = eval(form.grams.value);
+var bodywater = eval(form.bodywater.value);
+var hours = eval(form.hours.value);
+var minutes = eval(form.minutes.value);
+var result = (grams / bodywater * 80.65 - (15 * (hours + (minutes / 60))))/1000;
+form.BAC.value = result;
+}
+//  End -->
+
+</script>
+<form method="post" name="grams">
+<center>
+</center><table border="4">
+<tbody><tr>
+<td align="center">
+Calculate Blood Alcohol Concentration
+</td>
+</tr></tbody></table><table border="4">
+<tbody><tr>
+<td align="center">
+<table border="4">
+<tbody><tr>
+<td align="center">
+Grams of Alcohol
+</td>
+<td align="center">
+
+<input name="grams" size="6" type="text">
+</td>
+<td colspan="4" align="center">
+Total Body Water
+</td>
+<td align="center">
+<input name="bodywater" size="6" type="text">
+</td>
+<td colspan="4" align="center">
+Number of hours from first drink to now
+</td>
+<td align="center">
+<input name="hours" size="6" type="text">
+</td>
+<td colspan="4" align="center">
+Number of minutes from first drink to now
+</td>
+
+<td align="center">
+<input name="minutes" size="6" type="text">
+</td>
+<td colspan="4" align="center">
+<input name="bac" value="Calculate Your BAC" onclick="javascript: solveBAC(this.form)" type="button">
+</td>
+</tr>
+<tr>
+<td align="center">
+BAC
+</td>
+<td colspan="3" align="center">
+<input name="BAC" size="21" type="text">
+</td>
+</tr>
+<tr>
+<td align="center">
+
+</td></tr></tbody></table>
+</form>
+</center></div>
+
+
