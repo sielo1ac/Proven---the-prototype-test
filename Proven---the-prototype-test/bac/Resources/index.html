@@ -1,308 +1,447 @@
 <script language="JavaScript">
-<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
-<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
-<!-- Begin
-function solvegrams(form) {
-var a = eval(form.a.value);
-var b = eval(form.b.value);
-var c = eval(form.c.value);
-var d = eval(form.d.value);
-var e = eval(form.e.value);
-var f = eval(form.f.value);
-var g = eval(form.g.value);
-var h = eval(form.h.value);
-var i = eval(form.i.value);
-var result = 23.36 * ((a * (b / 100) * c) + (d * (e / 100) * f) + (g * (h / 100) * i)); 
-form.gramsa.value = result;
-}
-//  End -->
+	<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+	<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+	<!-- This script and many more are available free online at -->
+	<!-- The JavaScript Source!! http://javascript.internet.com -->
+	<!-- Begin
+	function solvegrams(form) {
+	var a = eval(form.a.value);
+	var b = eval(form.b.value);
+	var c = eval(form.c.value);
+	var d = eval(form.d.value);
+	var e = eval(form.e.value);
+	var f = eval(form.f.value);
+	var g = eval(form.g.value);
+	var h = eval(form.h.value);
+	var i = eval(form.i.value);
+	var result = 23.36 * ((a * (b / 100) * c) + (d * (e / 100) * f) + (g * (h / 100) * i));
+	form.gramsa.value = result;
+	}
+	//  End -->
 </script>
 <form method="post" name="grams">
-<center>
-</center><table border="4">
-<tbody><tr>
-<td align="center">
-Grams of Alcohol Consumed
-</td>
-</tr></tbody></table><table border="4">
-<tbody><tr>
-<td align="center">
-1 #
-</td>
-<td align="center">
-<input name="a" size="6" type="text">
-</td>
-<td align="center">
-1 % 
-</td>
-<td align="center">
-<input name="b" size="6" type="text">
-</td>
-<td align="center">
-1 oz
-</td>
-<td align="center">
-<input name="c" size="6" type="text">
-</td>
-<td align="center">
-2 #
-</td>
-<td align="center">
-<input name="d" size="6" type="text">
-</td>
-<td align="center">
-2 %
-</td>
-<td align="center">
-<input name="e" size="6" type="text">
-</td>
-<td align="center">
-2 oz
-</td>
-<td align="center">
-<input name="f" size="6" type="text">
-</td>
-<td align="center">
-3 #
-</td>
-<td align="center">
-<input name="g" size="6" type="text">
-</td>
-<td align="center">
-3 %
-</td>
-<td align="center">
-<input name="h" size="6" type="text">
-</td>
-<td align="center">
-3 oz
-</td>
-<td align="center">
-<input name="i" size="6" type="text">
-</td>
-<td align="center">
-<input name="gramsbutton" value="Calculate Your Grams Of Alcohol" onclick="javascript:solvegrams(this.form)" type="button">
-</td>
-</tr>
-<tr>
-<td align="center">
-Total Grams of Alcohol Consumed 
-</td>
-<td colspan="3" align="center">
-<input name="gramsa" size="21" type="text">
-</td>
-</tr>
-<tr>
-<td align="center">
-</td></tr></tbody></table>
+	<center>
+	</center>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">Grams of Alcohol Consumed</td>
+			</tr>
+		</tbody>
+	</table>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">1 #</td>
+				<td align="center">
+				<input name="a" size="6" type="text">
+				</td>
+				<td align="center">1 % </td>
+				<td align="center">
+				<input name="b" size="6" type="text">
+				</td>
+				<td align="center">1 oz</td>
+				<td align="center">
+				<input name="c" size="6" type="text">
+				</td>
+				<td align="center">2 #</td>
+				<td align="center">
+				<input name="d" size="6" type="text">
+				</td>
+				<td align="center">2 %</td>
+				<td align="center">
+				<input name="e" size="6" type="text">
+				</td>
+				<td align="center">2 oz</td>
+				<td align="center">
+				<input name="f" size="6" type="text">
+				</td>
+				<td align="center">3 #</td>
+				<td align="center">
+				<input name="g" size="6" type="text">
+				</td>
+				<td align="center">3 %</td>
+				<td align="center">
+				<input name="h" size="6" type="text">
+				</td>
+				<td align="center">3 oz</td>
+				<td align="center">
+				<input name="i" size="6" type="text">
+				</td>
+				<td align="center">
+				<input name="gramsbutton" value="Calculate Your Grams Of Alcohol" onclick="javascript:solvegrams(this.form)" type="button">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">Total Grams of Alcohol Consumed </td>
+				<td colspan="3" align="center">
+				<input name="gramsa" size="21" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td align="center"></td>
+			</tr>
+		</tbody>
+	</table>
 </form>
 
 <script language="JavaScript">
-<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
-<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
-<!-- Begin
-function solvebodywaterwomen(form){
-var height = eval(form.height.value);
-var weight = eval(form.weight.value);
-var age = eval(form.age.value);
-var result = -2.097 + (age * 0) +(0.1069 * (height * 2.54)) + (0.2466 * (weight / 2.2045));
-form.bodywaterwomen.value = result;
-}
-//  End -->
+	<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+	<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+	<!-- This script and many more are available free online at -->
+	<!-- The JavaScript Source!! http://javascript.internet.com -->
+	<!-- Begin
+	function solvebodywaterwomen(form){
+	var height = eval(form.height.value);
+	var weight = eval(form.weight.value);
+	var age = eval(form.age.value);
+	var result = -2.097 + (age * 0) +(0.1069 * (height * 2.54)) + (0.2466 * (weight / 2.2045));
+	form.bodywaterwomen.value = result;
+	}
+	//  End -->
 </script>
 <form method="post" name="grams">
-<center>
-</center><table border="4">
-<tbody><tr>
-<td align="center">
-Body Water Calculator for Women
-</td>
-</tr></tbody></table><table border="4">
-<tbody><tr>
-<td align="center">
-<table border="4">
-<tbody><tr>
-<td align="center">
+	<center>
+	</center>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">Body Water Calculator for Women</td>
+			</tr>
+		</tbody>
+	</table>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">
+				<table border="4">
+					<tbody>
+						<tr>
+							<td align="center">Age </td>
+							<td align="center">
+							<input name="age" size="6" type="text">
+							</td>
+							<td align="center">Height in inches</td>
+							<td align="center">
+							<input name="height" size="6" type="text">
+							</td>
+							<td align="center">Weight in Pounds</td>
+							<td align="center">
+							<input name="weight" size="6" type="text">
+							</td>
 
-Age 
-</td>
-<td align="center">
-<input name="age" size="6" type="text">
-</td>
-<td align="center">
-Height in inches
-</td>
-<td align="center">
-<input name="height" size="6" type="text">
-</td>
-<td align="center">
-Weight in Pounds
-</td>
-<td align="center">
-<input name="weight" size="6" type="text">
-</td>
+						</tr>
+						<tr>
+							<td colspan="4" align="center">
+							<input name="bodywaterc" value="Calculate Your Body Water" onclick="javascript:solvebodywaterwomen(this.form)" type="button">
+							</td>
+						</tr>
+						<tr>
+							<td align="center">Body Water</td>
+							<td colspan="3" align="center">
+							<input name="bodywaterwomen" size="21" type="text">
+							</td>
+						</tr>
+						<tr>
+							<td align="center"></td>
+						</tr>
+					</tbody>
+				</table>
 
-</tr>
-<tr>
-<td colspan="4" align="center">
-<input name="bodywaterc" value="Calculate Your Body Water" onclick="javascript:solvebodywaterwomen(this.form)" type="button">
-</td>
-</tr>
-<tr>
-<td align="center">
-Body Water
-</td>
-<td colspan="3" align="center">
-<input name="bodywaterwomen" size="21" type="text">
-</td>
-</tr>
-<tr>
-<td align="center">
-</td></tr></tbody></table>
-
-<script type="text/javascript"> parent.resizeMe("scriptInclude637743852370064299"); parent.setInterval("resizeMe('scriptInclude637743852370064299');", 250); </script></td></tr></tbody></table></form></div>
+				<script type="text/javascript">
+					parent.resizeMe("scriptInclude637743852370064299");
+					parent.setInterval("resizeMe('scriptInclude637743852370064299');", 250);
+				</script>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form></div>
 <script language="JavaScript">
-<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
-<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
-<!-- Begin
-function solvebodywater(form){
-var height = eval(form.height.value);
-var weight = eval(form.weight.value);
-var age = eval(form.age.value);
-var result = 2.44 - (0.09516 * age) + (0.1074 * (height * 2.54)) + (0.3362 * (weight / 2.2045));
-form.bodywater.value = result;
-}
-//  End -->
+	<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+	<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+	<!-- This script and many more are available free online at -->
+	<!-- The JavaScript Source!! http://javascript.internet.com -->
+	<!-- Begin
+	function solvebodywater(form){
+	var height = eval(form.height.value);
+	var weight = eval(form.weight.value);
+	var age = eval(form.age.value);
+	var result = 2.44 - (0.09516 * age) + (0.1074 * (height * 2.54)) + (0.3362 * (weight / 2.2045));
+	form.bodywater.value = result;
+	}
+	//  End -->
 </script>
 <form method="post" name="grams">
-<center>
-</center><table border="4">
-<tbody><tr>
-<td align="center">
-Body Water Calculator for Men
-</td>
+	<center>
+	</center>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">Body Water Calculator for Men</td>
 
-</tr></tbody></table><table border="4">
-<tbody><tr>
-<td align="center">
-<table border="4">
-<tbody><tr>
-<td align="center">
-Age 
-</td>
-<td align="center">
-<input name="age" size="6" type="text">
-</td>
-<td align="center">
-Height in inches
-</td>
-<td align="center">
-<input name="height" size="6" type="text">
-</td>
+			</tr>
+		</tbody>
+	</table>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">
+				<table border="4">
+					<tbody>
+						<tr>
+							<td align="center">Age </td>
+							<td align="center">
+							<input name="age" size="6" type="text">
+							</td>
+							<td align="center">Height in inches</td>
+							<td align="center">
+							<input name="height" size="6" type="text">
+							</td>
 
-<td align="center">
-Weight in Pounds
-</td>
-<td align="center">
-<input name="weight" size="6" type="text">
-</td>
-</tr>
-<tr>
-<td colspan="4" align="center">
-<input name="bodywaterc" value="Calculate Your Body Water" onclick="javascript:solvebodywater(this.form)" type="button">
-</td>
-</tr>
-<tr>
-<td align="center">
-Body Water
-</td>
-<td colspan="3" align="center">
+							<td align="center">Weight in Pounds</td>
+							<td align="center">
+							<input name="weight" size="6" type="text">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" align="center">
+							<input name="bodywaterc" value="Calculate Your Body Water" onclick="javascript:solvebodywater(this.form)" type="button">
+							</td>
+						</tr>
+						<tr>
+							<td align="center">Body Water</td>
+							<td colspan="3" align="center">
 
-<input name="bodywater" size="21" type="text">
-</td>
-</tr>
-<tr>
-<td align="center">
-</td></tr></tbody></table>
-<script type="text/javascript"> parent.resizeMe("scriptInclude637743852370064299"); parent.setInterval("resizeMe('scriptInclude637743852370064299');", 250); </script></td></tr></tbody></table></form>
+							<input name="bodywater" size="21" type="text">
+							</td>
+						</tr>
+						<tr>
+							<td align="center"></td>
+						</tr>
+					</tbody>
+				</table>
+				<script type="text/javascript">
+					parent.resizeMe("scriptInclude637743852370064299");
+					parent.setInterval("resizeMe('scriptInclude637743852370064299');", 250);
+				</script>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
 <script language="JavaScript">
-<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
-<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
-<!-- This script and many more are available free online at -->
-<!-- The JavaScript Source!! http://javascript.internet.com -->
-<!-- Begin
-function solveBAC(form) {
-var grams = eval(form.grams.value);
-var bodywater = eval(form.bodywater.value);
-var hours = eval(form.hours.value);
-var minutes = eval(form.minutes.value);
-var result = (grams / bodywater * 80.65 - (15 * (hours + (minutes / 60))))/1000;
-form.BAC.value = result;
-}
-//  End -->
-
+	<!-- Original:  James P. Dildine (jpd@wlsmail.com) -->
+	<!-- Web Site:  http://www.mste.uiuc.edu/dildine -->
+	<!-- This script and many more are available free online at -->
+	<!-- The JavaScript Source!! http://javascript.internet.com -->
+	<!-- Begin
+	function solveBAC(form) {
+	var grams = eval(form.grams.value);
+	var bodywater = eval(form.bodywater.value);
+	var hours = eval(form.hours.value);
+	var minutes = eval(form.minutes.value);
+	var result = (grams / bodywater * 80.65 - (15 * (hours + (minutes / 60))))/1000;
+	form.BAC.value = result;
+	}
+	//  End -->
 </script>
 <form method="post" name="grams">
-<center>
-</center><table border="4">
-<tbody><tr>
-<td align="center">
-Calculate Blood Alcohol Concentration
-</td>
-</tr></tbody></table><table border="4">
-<tbody><tr>
-<td align="center">
-<table border="4">
-<tbody><tr>
-<td align="center">
-Grams of Alcohol
-</td>
-<td align="center">
+	<center>
+	</center>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">Calculate Blood Alcohol Concentration</td>
+			</tr>
+		</tbody>
+	</table>
+	<table border="4">
+		<tbody>
+			<tr>
+				<td align="center">
+				<table border="4">
+					<tbody>
+						<tr>
+							<td align="center">Grams of Alcohol</td>
+							<td align="center">
 
-<input name="grams" size="6" type="text">
-</td>
-<td colspan="4" align="center">
-Total Body Water
-</td>
-<td align="center">
-<input name="bodywater" size="6" type="text">
-</td>
-<td colspan="4" align="center">
-Number of hours from first drink to now
-</td>
-<td align="center">
-<input name="hours" size="6" type="text">
-</td>
-<td colspan="4" align="center">
-Number of minutes from first drink to now
-</td>
+							<input name="grams" size="6" type="text">
+							</td>
+							<td colspan="4" align="center">Total Body Water</td>
+							<td align="center">
+							<input name="bodywater" size="6" type="text">
+							</td>
+							<td colspan="4" align="center">Number of hours from first drink to now</td>
+							<td align="center">
+							<input name="hours" size="6" type="text">
+							</td>
+							<td colspan="4" align="center">Number of minutes from first drink to now</td>
 
-<td align="center">
-<input name="minutes" size="6" type="text">
-</td>
-<td colspan="4" align="center">
-<input name="bac" value="Calculate Your BAC" onclick="javascript: solveBAC(this.form)" type="button">
-</td>
-</tr>
-<tr>
-<td align="center">
-BAC
-</td>
-<td colspan="3" align="center">
-<input name="BAC" size="21" type="text">
-</td>
-</tr>
-<tr>
-<td align="center">
-
-</td></tr></tbody></table>
+							<td align="center">
+							<input name="minutes" size="6" type="text">
+							</td>
+							<td colspan="4" align="center">
+							<input name="bac" value="Calculate Your BAC" onclick="javascript: solveBAC(this.form)" type="button">
+							</td>
+						</tr>
+						<tr>
+							<td align="center">BAC</td>
+							<td colspan="3" align="center">
+							<input name="BAC" size="21" type="text">
+							</td>
+						</tr>
+						<tr>
+							<td align="center"></td>
+						</tr>
+					</tbody>
+				</table>
 </form>
 </center></div>
 
 
+<html>
+<head>
+<script language="javascript">
+function displ()
+{
+  if(document.myFORM.valu.options[0].value == true) {
+    return false
+  }
+  else {
+document.myFORM.textfield.value=document.myFORM.valu.options[document.myFORM.valu.selectedIndex].value;
+  }
+  return true;
+}
+//-->
+</script>
+
+</head>
+<body bgcolor="#GGGGGG" text="0000">
+<table border="0" cellspacing="0" cellpadding="0" width="75%">
+  <tr>
+<td width="100%"><form name="myFORM" onClick="return displ();">
+        <p>
+          <select name="valu" size="15">
+
+<option value>Choose a State</option>
+
+<option value="There were 367 alcohol related fatalities due to car accidents in 2008, representing 38% of all fatalities.  The limit is 0.08; don't drink and drive.">AL | Alabama</option>
+
+<option value="There were 24 alcohol related fatalities due to car accidents in 2008, representing 38% of all fatalities.  The limit is 0.08; don't drink and drive.">AK | Alaska</option>
+
+<option value="There were 329 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">AZ | Arizona</option>
+
+<option value="There were 205 alcohol related fatalities due to car accidents in 2008, representing 34% of all fatalities.  The limit is 0.08; don't drink and drive.">AR | Arkansas</option>
+
+<option value="There were 329 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">AZ | Arizona</option>
+
+<option value="There were 1198 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">CA | California</option>
+
+<option value="There were 202 alcohol related fatalities due to car accidents in 2008, representing 37% of all fatalities.  The limit is 0.10; don't drink and drive.">CO | Colorado</option>
+
+<option value="There were 104 alcohol related fatalities due to car accidents in 2008, representing 40% of all fatalities.  The limit is 0.08; don't drink and drive.">CT | Connecticut</option>
+
+<option value="There were 49 alcohol related fatalities due to car accidents in 2008, representing 40% of all fatalities.  The limit is 0.10; don't drink and drive.">DE | Delaware</option>
+
+<option value="There were 13 alcohol related fatalities due to car accidents in 2008, representing 39% of all fatalities.  The limit is 0.08; don't drink and drive.">DC | District of Columbia</option>
+
+<option value="There were 1031 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">FL | Florida</option>
+
+<option value="There were 329 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">AZ | Arizona</option>
+
+<option value="There were 489 alcohol related fatalities due to car accidents in 2008, representing 33% of all fatalities.  The limit is 0.08; don't drink and drive.">GA | Georgia</option>
+
+<option value="There were 50 alcohol related fatalities due to car accidents in 2008, representing 46% of all fatalities.  The limit is 0.08; don't drink and drive.">HI | Hawaii</option>
+
+<option value="There were 93 alcohol related fatalities due to car accidents in 2008, representing 40% of all fatalities.  The limit is 0.08; don't drink and drive.">ID | Idaho</option>
+
+<option value="There were 434 alcohol related fatalities due to car accidents in 2008, representing 32% of all fatalities.  The limit is 0.08; don't drink and drive.">IL | Illinois</option>
+
+<option value="There were 250 alcohol related fatalities due to car accidents in 2008, representing 31% of all fatalities.  The limit is 0.08; don't drink and drive.">IN | Indiana</option>
+
+<option value="There were 113 alcohol related fatalities due to car accidents in 2008, representing 27% of all fatalities.  The limit is 0.08; don't drink and drive.">IN | Arizona</option>
+
+<option value="There were 329 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">IA | Iowa</option>
+
+<option value="There were 157 alcohol related fatalities due to car accidents in 2008, representing 41% of all fatalities.  The limit is 0.08; don't drink and drive.">KS | Kansas</option>
+
+<option value="There were 226 alcohol related fatalities due to car accidents in 2008, representing 27% of all fatalities.  The limit is 0.08; don't drink and drive.">KY | Kentucky</option>
+
+<option value="There were 404 alcohol related fatalities due to car accidents in 2008, representing 44% of all fatalities.  The limit is 0.08; don't drink and drive.">LA | Louisiana</option>
+
+<option value="There were 47 alcohol related fatalities due to car accidents in 2008, representing 30% of all fatalities.  The limit is 0.08; don't drink and drive.">MN | Maine</option>
+
+<option value="There were 186 alcohol related fatalities due to car accidents in 2008, representing 31% of all fatalities.  The limit is 0.08; don't drink and drive.">MD | Maryland</option>
+
+<option value="There 151 alcohol related fatalities due to car accidents in 2008, representing 42% of all fatalities.  The limit is 0.08; don't drink and drive.">MA | Massachusetts</option>
+
+<option value="There were 331 alcohol related fatalities due to car accidents in 2008, representing 34% of all fatalities.  The limit is 0.08; don't drink and drive.">MI | Michigan</option>
+
+<option value="There were 161 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.10; don't drink and drive.">MN | Minnesota</option>
+
+<option value="There were 297 alcohol related fatalities due to car accidents in 2008, representing 38% of all fatalities.  The limit is 0.08; don't drink and drive.">MS | Mississippi</option>
+
+<option value="There were 364 alcohol related fatalities due to car accidents in 2008, representing 38% of all fatalities.  The limit is 0.08; don't drink and drive.">MO | Missouri</option>
+
+<option value="There were 103 alcohol related fatalities due to car accidents in 2008, representing 45% of all fatalities.  The limit is 0.08; don't drink and drive.">MT | Montana</option>
+
+<option value="There were 75 alcohol related fatalities due to car accidents in 2008, representing 36% of all fatalities.  The limit is 0.08; don't drink and drive.">NE | Nebraska</option>
+
+<option value="There were 121 alcohol related fatalities due to car accidents in 2008, representing 37% of all fatalities.  The limit is 0.08; don't drink and drive.">NV | Nevada</option>
+
+<option value="There were 53 alcohol related fatalities due to car accidents in 2008, representing 38% of all fatalities.  The limit is 0.08; don't drink and drive.">NH | New Hampshire</option>
+
+<option value="There were 197 alcohol related fatalities due to car accidents in 2008, representing 33% of all fatalities.  The limit is 0.08; don't drink and drive.">NJ | New Jersey</option>
+
+<option value="There were 118 alcohol related fatalities due to car accidents in 2008, representing 32% of all fatalities.  The limit is 0.08; don't drink and drive.">NM | New Mexico</option>
+
+<option value="There were 409 alcohol related fatalities due to car accidents in 2008, representing 33% of all fatalities.  The limit is 0.08; don't drink and drive.">NY | New York</option>
+
+<option value="There were 500 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">NC | North Carolina</option>
+
+<option value="There were 52 alcohol related fatalities due to car accidents in 2008, representing 50% of all fatalities.  The limit is 0.08; don't drink and drive.">ND | North Dakota</option>
+
+<option value="There were 415 alcohol related fatalities due to car accidents in 2008, representing 35% of all fatalities.  The limit is 0.08; don't drink and drive.">OH | Ohio</option>
+
+<option value="There were 274 alcohol related fatalities due to car accidents in 2008, representing 37% of all fatalities.  The limit is 0.08; don't drink and drive.">OK | Oklahoma</option>
+
+<option value="There were 159 alcohol related fatalities due to car accidents in 2008, representing 38% of all fatalities.  The limit is 0.08; don't drink and drive.">OR | Oregon</option>
+
+<option value="There were 578 alcohol related fatalities due to car accidents in 2008, representing 39% of all fatalities.  The limit is 0.08; don't drink and drive.">PA | Pennsylvania</option>
+
+<option value="There were 162 alcohol related fatalities due to car accidents in 2008, representing 41% of all fatalities.  The limit is 0.08; don't drink and drive.">PR | Puerto Rico</option>
+
+<option value="There were 29 alcohol related fatalities due to car accidents in 2008, representing 45% of all fatalities.  The limit is 0.08; don't drink and drive.">RI | Rhode Island</option>
+
+<option value="There were 463 alcohol related fatalities due to car accidents in 2008, representing 50% of all fatalities.  The limit is 0.08; don't drink and drive.">SC | South Carolina</option>
+
+<option value="There were 41 alcohol related fatalities due to car accidents in 2008, representing 34% of all fatalities.  The limit is 0.08; don't drink and drive.">SD | South Dakota</option>
+
+<option value="There were 386 alcohol related fatalities due to car accidents in 2008, representing 37% of all fatalities.  The limit is 0.08; don't drink and drive.">TN | Tennessee</option>
+
+<option value="There were 1463 alcohol related fatalities due to car accidents in 2008, representing 43% of all fatalities.  The limit is 0.08; don't drink and drive.">TX | Texas</option>
+
+<option value="There were 55 alcohol related fatalities due to car accidents in 2008, representing 20% of all fatalities.  The limit is 0.08; don't drink and drive.">UT | Utah</option>
+
+<option value="There were 15 alcohol related fatalities due to car accidents in 2008, representing 21% of all fatalities.  The limit is 0.08; don't drink and drive.">VT | Vermont</option>
+
+<option value="There were 365 alcohol related fatalities due to car accidents in 2008, representing 44% of all fatalities.  The limit is 0.08; don't drink and drive.">VA | Virginia</option>
+
+<option value="There were 225 alcohol related fatalities due to car accidents in 2008, representing 43% of all fatalities.  The limit is 0.08; don't drink and drive.">WA | Washington</option>
+
+<option value="There were 142 alcohol related fatalities due to car accidents in 2008, representing 37% of all fatalities.  The limit is 0.08; don't drink and drive.">WV | West Virginia</option>
+
+<option value="There were 250 alcohol related fatalities due to car accidents in 2008, representing 41% of all fatalities.  The limit is 0.08; don't drink and drive.">WI | Wisconsin</option>
+
+<option value="There were 75 alcohol related fatalities due to car accidents in 2008, representing 47% of all fatalities.  The limit is 0.08; don't drink and drive.">WY | Wyoming</option>
+ <option value=""> | </option>
+          </select>
+          <input type="text" name="textfield" size="140">
+        </p>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
